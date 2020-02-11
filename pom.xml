@@ -68,6 +68,7 @@
     				<threadCountClasses>2</threadCountClasses>
     				<threadCountMethods>3</threadCountMethods>
                     <testFailureIgnore>true</testFailureIgnore>
+                    <outputName>index</outputName>
                 </configuration>
             </plugin>
             <plugin>
