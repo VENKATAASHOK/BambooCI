@@ -13,4 +13,10 @@ public class Hook {
         Driver.get().manage().window().maximize();
         
 }
+	@After
+    public void close() {
+	System.out.println("##############################");
+        System.out.println("Test case completed!");
+        Driver.close();
+	}
 }
