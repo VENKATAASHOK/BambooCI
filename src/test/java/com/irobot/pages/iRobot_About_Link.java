@@ -1,7 +1,5 @@
 package com.irobot.pages;
 
-import java.util.concurrent.TimeUnit;
-
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
@@ -17,6 +15,7 @@ public class iRobot_About_Link{
 	private String url;
 	
 	private String about = "//A[@class='a-link a-link--nav'][text()='About']";
+							
 	
 	private String company_overview = "(//A[@class='a-link'][text()='Overview'][text()='Overview'])[1]";
 	
