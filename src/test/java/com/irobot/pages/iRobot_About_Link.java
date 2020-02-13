@@ -1,5 +1,7 @@
 package com.irobot.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
@@ -99,7 +101,9 @@ public class iRobot_About_Link{
 			System.out.println("Test failed");
 			
 		}
-		Driver.get().navigate().back();
+		Driver.get().get("https://www.irobot.com/");
+		Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		linkclick();
 	}
 	
 	public void loopmedia() {
@@ -114,7 +118,9 @@ public class iRobot_About_Link{
 			System.out.println("Test failed");
 			
 		}
-		Driver.get().navigate().back();
+		Driver.get().get("https://www.irobot.com/");
+		Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		linkclick();
 	}
 	
 	public void loopworkday() {
@@ -129,7 +135,9 @@ public class iRobot_About_Link{
 			System.out.println("Test failed");
 			
 		}
-		Driver.get().navigate().back();
+		Driver.get().get("https://www.irobot.com/");
+		Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		linkclick();
 	}
 	
 	public void linkclick() {
@@ -157,7 +165,7 @@ public class iRobot_About_Link{
 		System.out.println("investors overview clicked");
 		url = Driver.get().getCurrentUrl();
 		loopinvestor();
-		linkclick();
+		
 	}
 	
 	public void careers() {
