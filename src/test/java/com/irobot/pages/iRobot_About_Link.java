@@ -35,7 +35,7 @@ public class iRobot_About_Link{
 	private String iR_ventures = "//A[@class='a-link'][text()='iRobot Ventures']";
 	
 
-	private String stem_overview = "(//A[@class='a-link'][text()='Overview'][text()='Overview'])[2]";
+	private String stem_overview = "//A[@class='a-link'][text()='STEM']";
 	
 
 	private String stem_resource = "//A[@class='a-link'][text()='STEM Resources']";
@@ -46,7 +46,7 @@ public class iRobot_About_Link{
 
 	private String create_two_proj = "//A[@class='a-link'][text()='Create 2 Projects']";
 	
-	private String investors_overview = "(//A[@class='a-link'][text()='Overview'][text()='Overview'])[3]";
+	private String investors_overview = "(//A[@class='a-link'][text()='Overview'][text()='Overview'])[2]";
 	
 
 	private String stock_info = "//A[@class='a-link'][text()='Stock Information']";
@@ -55,7 +55,7 @@ public class iRobot_About_Link{
 	private String press_overview = "(//A[@class='a-link'][text()='Media Kits']";
 	
 
-	private String careers_overview = "(//A[@class='a-link'][text()='Overview'][text()='Overview'])[4]";
+	private String careers_overview = "(//A[@class='a-link'][text()='Overview'][text()='Overview'])[3]";
 
 	private String what_set_us = "//A[@class='a-link'][text()='What Sets Us Apart']";
 	
@@ -170,7 +170,7 @@ public class iRobot_About_Link{
 	
 	public void careers() {
 		Driver.get().findElement(By.xpath(careers_overview)).click();
-		System.out.println("investors overview clicked");
+		System.out.println("careers overview clicked");
 		url = Driver.get().getCurrentUrl();
 		loopdev();
 		Driver.get().close();
