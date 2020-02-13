@@ -95,7 +95,6 @@ public class StepDefinition{
 	
 	@When("^user clicks on the about link$")
 	public void user_clicks_on_the_about_link() {
-		Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		aboutlink = new iRobot_About_Link();
 		aboutlink.linkclick();	
 	}

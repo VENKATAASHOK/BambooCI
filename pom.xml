@@ -65,8 +65,8 @@
                     <runOrder>Alphabetical</runOrder>
                     <parallel>methods</parallel>
     				<perCoreThreadCount>false</perCoreThreadCount>
-    				<threadCountClasses>2</threadCountClasses>
-    				<threadCountMethods>3</threadCountMethods>
+    				<threadCountClasses>13</threadCountClasses>
+    				<threadCountMethods>13</threadCountMethods>
                     <testFailureIgnore>true</testFailureIgnore>
                     <outputName>index</outputName>
                 </configuration>
@@ -110,7 +110,7 @@
 
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <threadCountMethods>2</threadCountMethods>
+                            <threadCountMethods>3</threadCountMethods>
                             <testFailureIgnore>true</testFailureIgnore>
                         </configuration>
                     </plugin>

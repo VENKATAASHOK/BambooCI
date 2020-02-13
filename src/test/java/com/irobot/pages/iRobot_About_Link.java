@@ -16,7 +16,7 @@ public class iRobot_About_Link{
 	
 	private String url;
 	
-	private String about = "//A[@class='a-link a-link--nav'][text()='About']";
+	private String about = "//A[@class='a-link a-link--nav active'][text()='About']";
 	
 	private String company_overview = "(//A[@class='a-link'][text()='Overview'][text()='Overview'])[1]";
 	
@@ -133,7 +133,7 @@ public class iRobot_About_Link{
 	}
 	
 	public void linkclick() {
-		Driver.get().manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Driver.get().findElement(By.xpath(about)).click();
 		
 	}
