@@ -148,13 +148,14 @@ public class iRobot_About_Link{
 	}
 	public void stem() {
 		Driver.get().findElement(By.xpath(stem_overview)).click();
+		System.out.println("stem overview clicked");
 		url = Driver.get().getCurrentUrl();
 		loopdev();
-		linkclick();
 	}
 	
 	public void investors() {
 		Driver.get().findElement(By.xpath(investors_overview)).click();
+		System.out.println("investors overview clicked");
 		url = Driver.get().getCurrentUrl();
 		loopinvestor();
 		linkclick();
@@ -162,9 +163,9 @@ public class iRobot_About_Link{
 	
 	public void careers() {
 		Driver.get().findElement(By.xpath(careers_overview)).click();
+		System.out.println("investors overview clicked");
 		url = Driver.get().getCurrentUrl();
 		loopdev();
-		linkclick();
 		Driver.get().close();
 	}
 	
