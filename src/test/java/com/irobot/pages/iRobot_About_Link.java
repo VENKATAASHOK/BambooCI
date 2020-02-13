@@ -135,11 +135,13 @@ public class iRobot_About_Link{
 	public void linkclick() {
 		Driver.get().manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		Driver.get().findElement(By.xpath(about)).click();
+		System.out.println("about clicked");
 		
 	}
 
 	public void company_info() {
 		Driver.get().findElement(By.xpath(company_overview)).click();
+		System.out.println("overview clicked");
 		url = Driver.get().getCurrentUrl();
 		loopdev();
 		linkclick();
