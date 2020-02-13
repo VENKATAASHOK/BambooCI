@@ -84,6 +84,7 @@ public class iRobot_About_Link{
 			System.out.println("Test failed");
 			
 		}
+		linkclick();
 
 	}
 	
@@ -144,7 +145,6 @@ public class iRobot_About_Link{
 		System.out.println("overview clicked");
 		url = Driver.get().getCurrentUrl();
 		loopdev();
-		linkclick();
 	}
 	public void stem() {
 		Driver.get().findElement(By.xpath(stem_overview)).click();
