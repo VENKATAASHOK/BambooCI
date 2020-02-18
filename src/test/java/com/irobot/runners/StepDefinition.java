@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import com.irobot.pages.iRobor_Account_link;
 import com.irobot.pages.iRobot_About_Link;
 import com.irobot.pages.iRobot_Support_link;
+import com.irobot.pages.iRobot_minicart_functionality;
 import com.irobot.utilities.Driver;
 
 public class StepDefinition{
@@ -18,6 +19,8 @@ public class StepDefinition{
 	iRobot_Support_link supportlink;
 	
 	iRobot_About_Link aboutlink;
+	
+	iRobot_minicart_functionality mini;
 	
 	//******************** ACCOUNT ICON SCENARIO*********************************//
 
@@ -132,6 +135,52 @@ public class StepDefinition{
 	public void user_checks_all_the_links_under_careers() {
 	    // Write code here that turns the phrase above into concrete actions
 		aboutlink.careers();
+	}
+	
+	
+	//****************************************************FXM Mini cart functionality************************************************//
+	
+	@When("user clicks on the product link")
+	public void user_clicks_on_the_product_link() {
+	   //
+		mini = new iRobot_minicart_functionality();
+		mini.iconclick();  
+	}
+
+	@When("user selects the s series")
+	public void user_selects_the_s_series() {
+	    // Write code here that turns the phrase above into concrete actions
+		mini.select();
+	}
+
+	@When("user clicks on S shop now button")
+	public void user_clicks_on_S_shop_now_button() {
+	    // Write code here that turns the phrase above into concrete actions
+		mini.shopnow();
+	}
+
+	@When("user checks if page redirects to store")
+	public void user_checks_if_page_redirects_to_store() {
+	    // Write code here that turns the phrase above into concrete actions
+		mini.checkpage();
+	}
+
+	@When("user clicks on add to cart")
+	public void user_clicks_on_add_to_cart() {
+	    // Write code here that turns the phrase above into concrete actions
+		mini.addtocart();
+	}
+
+	@When("user goes back to home page")
+	public void user_goes_back_to_home_page() {
+	    // Write code here that turns the phrase above into concrete actions
+		mini.home();
+	}
+
+	@When("user checks if minicart is updated")
+	public void user_checks_if_minicart_is_updated() {
+	    // Write code here that turns the phrase above into concrete actions
+		mini.fxm_mini_check();
 	}
 		
 	
