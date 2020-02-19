@@ -72,7 +72,7 @@ public class iRobot_minicart_functionality {
 
 	public void addtocart() {
 		// TODO Auto-generated method stub
-		Driver.get().findElement(By.xpath(add_to_cart)).click();
+		add_to_cart.click();
 	}
 
 	public void home() {
