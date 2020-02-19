@@ -26,9 +26,13 @@ public class iRobot_minicart_functionality {
 	
 	private String shop_now = "https://store.irobot.com/default/roomba-robot-vacuums/irobot-roomba-s9-robot-vacuum-and-braava-jet-m6-robot-mop-bundle/4699392.html?_ga=2.156989371.1499271464.1582036956-1583972020.1578588772";
 
-	private String add_to_cart = "//BUTTON[@id='add-to-cart']";
+	@FindBy(xpath = "'//BUTTON[@id='add-to-cart']")
+	private WebElement add_to_cart;
 	
 	private String logo ="//IMG[@src='https://www.irobot.com/-/media/images/features/navigation/irobot-logo/logoani3.ashx?h=44&la=en&w=115&lm=637166116590000000&hash=1182D73EDEFB5F77D6596B46F86F9E10']";
+	
+	private String mini_cart = "(//I[@class='a-icon fas fa-shopping-cart'])[2]";
+	
 	private String url;
 	
 	Actions actions = new Actions(Driver.get());
@@ -78,9 +82,10 @@ public class iRobot_minicart_functionality {
 
 	public void fxm_mini_check() {
 		// TODO Auto-generated method stub
-		
+		Driver.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		Driver.get().findElement(By.cssSelector(mini_cart)).click();
+		System.out.println("okayyy");
 	}
-	
 	
 
 }
