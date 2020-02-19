@@ -83,7 +83,6 @@ public class iRobot_minicart_functionality {
 	public void fxm_mini_check() {
 		// TODO Auto-generated method stub
 		Driver.get().manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		Driver.get().findElement(By.cssSelector(mini_cart)).click();
 		System.out.println("okayyy");
 	}
 	
