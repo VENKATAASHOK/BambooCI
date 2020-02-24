@@ -102,7 +102,7 @@ public class iRobot_About_Link{
 			
 		}
 		Driver.get().get("https://www.irobot.com/");
-		Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		linkclick();
 	}
 	
@@ -119,7 +119,7 @@ public class iRobot_About_Link{
 			
 		}
 		Driver.get().get("https://www.irobot.com/");
-		Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		linkclick();
 	}
 	
@@ -136,7 +136,7 @@ public class iRobot_About_Link{
 			
 		}
 		Driver.get().get("https://www.irobot.com/");
-		Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		linkclick();
 	}
 	
